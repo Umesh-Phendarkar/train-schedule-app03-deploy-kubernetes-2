@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: train-schedule
+  namespace: train-schedule
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: train-schedule
+
+  template:
+
+    metadata:
+      labels:
+        app: train-schedule
+
+    spec:
+
+      containers:
+
+      - name: train-schedule
+
+        image: IMAGE_PLACEHOLDER
+
+        imagePullPolicy: Always
+
+        ports:
+
+        - containerPort: 3000

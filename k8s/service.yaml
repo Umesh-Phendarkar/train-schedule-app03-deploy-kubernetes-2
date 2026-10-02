@@ -1,0 +1,19 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: train-schedule
+  namespace: train-schedule
+
+spec:
+
+  selector:
+    app: train-schedule
+
+  ports:
+
+  - port: 80
+    targetPort: 3000
+
+  type: NodePort
