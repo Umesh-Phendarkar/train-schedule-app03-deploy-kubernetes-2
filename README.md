@@ -1,6 +1,7 @@
 # cicd-pipeline-train-schedule-pipelines App Deployes to Kubernetes
 
 This is a simple train schedule app written using nodejs. It is intended to be used as a sample application for a series of hands-on learning activities.
+## Lets Start
 Your CI/CD pipeline is Follows Above Process:
 
 CI/CD Pipeline Process Flow (GitHub Actions → Docker Hub → Kubernetes)
